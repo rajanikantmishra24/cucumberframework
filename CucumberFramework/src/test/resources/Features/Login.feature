@@ -13,6 +13,15 @@ And user can see Logout Link appear on the home page
 And close browser
 
 
+@validlogin
+Scenario: Valid Login
+When user enters the valid userid as "admin" and password as "admin"
+And click on login button
+Then User should be navigated to home page
+And user can see Logout Link appear on the home page 
+And close browser
+
+
 
 @test
 Scenario: Valid Login2
